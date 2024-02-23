@@ -1,0 +1,135 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 100px;
+    background-color: #ffeae0;
+
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+.nav .logo h1{
+    font-weight: 700;
+    color: black;
+    font-family: sans-serif;
+}
+.nav .logo b{
+    color: orangered;
+}
+.nav ul{
+     display: flex;
+     list-style: none;
+     
+}
+.nav ul li{
+    text-decoration: none;
+   margin-left: 40px;
+}
+.nav ul li a{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+
+}
+.nav ul li a:hover{
+    color: orange;
+}
+.nav input{
+    padding: 12px 15px;
+    margin-right: 10px;
+}
+.nav .signin{
+    font-size: 15px;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+
+}
+.nav .signup{
+    font-size: 15px;
+    font-weight: 500;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.content{
+    display: grid;
+    grid-template-columns: 50% auto;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 120px;
+}
+.content .content-left{
+    display: block;
+    width: 100%;
+}
+.content .content-left .infor{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.content .content-left .infor h1{
+    font-size: 50px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+.content .content-left .infor p{
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+.content .btn{
+     padding: 15px 20px;
+     border: none;
+     border-radius: 5px;
+     background-color: orangered ;
+     color: white;
+     font-size: 15px;
+     cursor: pointer;
+}
+.content .content-right{
+    display: block;
+    max-width: 100%;
+}
+.content .content-right img{
+    width: 450px;
+    height: auto;
+    border: 5px solid black;
+    border-radius: 50%;
+    position: relative;
+    user-select: none;
+    animation: rotate 10s linear infinite;
+
+}
+@keyframes rotate {
+    0%{
+         transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(100deg);
+    }
+}
+
+.category{
+    width: 100%;
+    height: auto;
+    left: 50px;
+    margin: 140px 150px 0 150px;
+    
+}
+
+
+
